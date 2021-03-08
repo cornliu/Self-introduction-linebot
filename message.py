@@ -3,11 +3,15 @@ from linebot import (LineBotApi, WebhookHandler)
 from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 from User import *
+import json
 
 def follow_event_message():
-    return TextSendMessage(text='Hi! My name is Ric. You can click the following squares to know me more.')
+    return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
 
-
+def text_msg(user, msg):
+    if msg == 'Contact':
+        FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
+        return line_bot_api.reply_message(reply_token, FlexSendMessage('Contact info',FlexMessage))
 # #ImagemapSendMessage(組圖訊息)
 # def imagemap_message():
 #     message = ImagemapSendMessage(

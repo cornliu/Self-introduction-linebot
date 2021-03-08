@@ -1,0 +1,180 @@
+{
+    "type": "bubble",
+    "hero": {
+      "type": "image",
+      "size": "full",
+      "aspectRatio": "20:13",
+      "aspectMode": "cover",
+      "action": {
+        "type": "uri",
+        "uri": "http://linecorp.com/"
+      },
+      "url": "https://imgur.com/hW7nZFK.jpg"
+    },
+    "body": {
+      "type": "box",
+      "layout": "vertical",
+      "contents": [
+        {
+          "type": "text",
+          "weight": "bold",
+          "size": "xl",
+          "text": " Contact information"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "margin": "lg",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Github",
+                  "color": "#000000",
+                  "size": "md",
+                  "flex": 1
+                },
+                {
+                  "type": "text",
+                  "text": "cornliu",
+                  "wrap": true,
+                  "color": "#999999",
+                  "size": "sm",
+                  "flex": 5,
+                  "margin": "none"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "github link",
+                "uri": "https://github.com/cornliu"
+              }
+            }
+          ],
+          "position": "relative"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Facebook",
+                  "color": "#000000",
+                  "size": "md",
+                  "flex": 1
+                },
+                {
+                  "type": "text",
+                  "text": "劉玉米",
+                  "wrap": true,
+                  "color": "#999999",
+                  "size": "sm",
+                  "flex": 5,
+                  "margin": "none"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "facebook link",
+                "uri": "https://www.facebook.com/liu.yumin.33"
+              }
+            }
+          ],
+          "position": "relative",
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Email",
+                  "color": "#000000",
+                  "size": "md",
+                  "flex": 1
+                },
+                {
+                  "type": "text",
+                  "text": "b07901112",
+                  "wrap": true,
+                  "color": "#999999",
+                  "size": "sm",
+                  "flex": 5,
+                  "margin": "none"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "Mail",
+                "uri": "mailto:b07901112@ntu.edu.tw"
+              }
+            }
+          ],
+          "margin": "md"
+        },
+        {
+          "type": "box",
+          "layout": "horizontal",
+          "margin": "md",
+          "contents": [
+            {
+              "type": "box",
+              "layout": "vertical",
+              "spacing": "sm",
+              "contents": [
+                {
+                  "type": "text",
+                  "text": "Mobile",
+                  "color": "#000000",
+                  "size": "md",
+                  "flex": 1
+                },
+                {
+                  "type": "text",
+                  "text": "0981433739",
+                  "wrap": true,
+                  "color": "#999999",
+                  "size": "sm",
+                  "flex": 5,
+                  "margin": "none"
+                }
+              ]
+            },
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "Call me",
+                "uri": "tel:+886-981433739"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }

@@ -48,12 +48,10 @@ def callback():
 # 處理訊息
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
-    message = event.source.user_id
-    print(message)
-    print(type(message))
-    print(str(message))
-    msg = TextSendMessage(text=message)
-    line_bot_api.reply_message(event.reply_token, msg)
+    global users
+    if event.source.user_id not in users.keys():
+        users[event.source.user_id] = User(event.source.user_id)
+    line_bot_api.reply_message(event.reply_token, text_msg(users[line_id], event.message.text))
 
 @handler.add(FollowEvent)
 def handle_follow(event):
