@@ -1,5 +1,5 @@
 from app import users
-import User
+from User import *
 def add_user(user_id):
     global users
     if user_id not in users.keys():
