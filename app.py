@@ -51,7 +51,7 @@ def handle_message(event):
     global users
     if event.source.user_id not in users.keys():
         users[event.source.user_id] = User(event.source.user_id)
-    line_bot_api.reply_message(event.reply_token, text_msg(users[line_id], event.message.text))
+    line_bot_api.reply_message(event.reply_token, text_msg(users[event.source.user_id], event.message.text))
 
 @handler.add(FollowEvent)
 def handle_follow(event):

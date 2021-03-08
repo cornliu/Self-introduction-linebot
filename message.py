@@ -11,7 +11,7 @@ def follow_event_message():
 def text_msg(user, msg):
     if msg == 'Contact':
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
-        return line_bot_api.reply_message(reply_token, FlexSendMessage('Contact info',FlexMessage))
+        return FlexSendMessage('Contact info',FlexMessage)
 # #ImagemapSendMessage(組圖訊息)
 # def imagemap_message():
 #     message = ImagemapSendMessage(
