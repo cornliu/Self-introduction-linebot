@@ -49,6 +49,7 @@ def callback():
 def handle_message(event):
     message = event.source
     print(message)
+    message = TextSendMessage(text=message)
     line_bot_api.reply_message(event.reply_token, message)
 
     # if '最新合作廠商' in msg:
