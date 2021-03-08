@@ -51,8 +51,8 @@ def handle_message(event):
     print(message)
     print(type(message))
     print(str(message))
-    msg = TextSendMessage(text=message)
-    line_bot_api.reply_message(event.reply_token, msg)
+    # msg = TextSendMessage(text=message)
+    # line_bot_api.reply_message(event.reply_token, msg)
 
     # if '最新合作廠商' in msg:
     #     message = imagemap_message()
