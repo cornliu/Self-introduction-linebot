@@ -49,8 +49,10 @@ def callback():
 def handle_message(event):
     message = event.source
     print(message)
-    message = TextSendMessage(text=message)
-    line_bot_api.reply_message(event.reply_token, message)
+    print(type(message))
+    print(str(message))
+    msg = TextSendMessage(text=message)
+    line_bot_api.reply_message(event.reply_token, msg)
 
     # if '最新合作廠商' in msg:
     #     message = imagemap_message()
