@@ -10,9 +10,8 @@ from linebot.models import *
 
 
 #======這裡是呼叫的檔案內容=====
+from User import *
 from message import *
-from new import *
-from Function import *
 #======這裡是呼叫的檔案內容=====
 
 #======python的函數庫==========
@@ -27,6 +26,8 @@ static_tmp_path = os.path.join(os.path.dirname(__file__), 'static', 'tmp')
 line_bot_api = LineBotApi('kI7T/eUfF5eSYM+BhMK7LrzWuZyud3JVLsbMopPPFBaAWD/mo1T/JDzW2m+s62ynU/30o1r+59JFHBiO/KDGmrJZ4JwKZaxyQ6rMFXtd4z56KAjL/zmB6WjQ7gKgScVzKmIf+focFvhZYEhDwLHcxAdB04t89/1O/w1cDnyilFU=')
 # Channel Secret
 handler = WebhookHandler('c0f6c754735cb9b273cc8158710cb4de')
+
+users = dict()
 
 # 監聽所有來自 /callback 的 Post Request
 @app.route("/callback", methods=['POST'])
@@ -54,27 +55,12 @@ def handle_message(event):
     msg = TextSendMessage(text=message)
     line_bot_api.reply_message(event.reply_token, msg)
 
-    # if '最新合作廠商' in msg:
-    #     message = imagemap_message()
-    #     line_bot_api.reply_message(event.reply_token, message)
-    # elif '最新活動訊息' in msg:
-    #     message = buttons_message()
-    #     line_bot_api.reply_message(event.reply_token, message)
-    # elif '註冊會員' in msg:
-    #     message = Confirm_Template()
-    #     line_bot_api.reply_message(event.reply_token, message)
-    # elif '旋轉木馬' in msg:
-    #     message = Carousel_Template()
-    #     line_bot_api.reply_message(event.reply_token, message)
-    # elif '圖片畫廊' in msg:
-    #     message = test()
-    #     line_bot_api.reply_message(event.reply_token, message)
-    # elif '功能列表' in msg:
-    #     message = function_list()
-    #     line_bot_api.reply_message(event.reply_token, message)
-    # else:
-    #     message = TextSendMessage(text=msg)
-    #     line_bot_api.reply_message(event.reply_token, message)
+@handler.add(FollowEvent)
+def handle_follow(event):
+    global users
+    if event.source.user_id not in users.keys():
+        users[event.source.user_id] = User(event.source.user_id)
+    line_bot_api.reply_message(event.reply_token, follow_event_message())
 
 import os
 if __name__ == "__main__":
