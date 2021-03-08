@@ -1,4 +1,4 @@
-from app.py import users
+from app import users
 import User.py
 def add_user(user_id):
     global users
