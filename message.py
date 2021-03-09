@@ -13,9 +13,9 @@ def text_msg(user, msg):
         user.state = 1
         message = list()
         message.append(TextSendMessage(text="I major in Electrical Engineering, and I'm also a fast learner in many area\
-            especially in software engineering. Besides, I have participated in lots of\
-            extracurricular software projects to improve the daily life. The following is\
-            my projects experience and also tips of iceberg in my college life."))
+especially in software engineering. Besides, I have participated in lots of\
+extracurricular software projects to improve the daily life. The following is\
+my projects experience and also tips of iceberg in my college life."))
         FlexMessage = json.load(open('Basicinfo_CV.json','r',encoding='utf-8'))
         message.append(FlexSendMessage('Basicinfo_CV', FlexMessage))
         return message
