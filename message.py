@@ -19,7 +19,7 @@ def text_msg(user, msg):
         FlexMessage = json.load(open('Basicinfo_CV.json','r',encoding='utf-8'))
         message.append(FlexSendMessage('Basicinfo_CV', FlexMessage))
         return message
-    else if msg.lower() == 'contact':
+    elif msg.lower() == 'contact':
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
         return FlexSendMessage('Contact info',FlexMessage)
