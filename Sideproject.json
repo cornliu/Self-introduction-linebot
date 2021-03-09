@@ -118,7 +118,7 @@
               "action": {
                 "type": "uri",
                 "label": "github",
-                "uri": "http://linecorp.com/"
+                "uri": "https://github.com/cornliu/EZ-tidy"
               },
               "style": "primary"
             }

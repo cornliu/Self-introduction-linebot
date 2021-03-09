@@ -17,7 +17,7 @@ def text_msg(user, msg):
         FlexMessage = json.load(open('Basicinfo_CV.json','r',encoding='utf-8'))
         message.append(FlexSendMessage('Basicinfo_CV', FlexMessage))
         return message
-    if msg.lower() == 'side project':
+    elif msg.lower() == 'side project':
         user.state = 2
         FlexMessage = json.load(open('Sideproject.json','r',encoding='utf-8'))
         return FlexSendMessage('Sideproject',FlexMessage)
@@ -26,3 +26,5 @@ def text_msg(user, msg):
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
         return FlexSendMessage('Contact info',FlexMessage)
+    else:
+        return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
