@@ -12,16 +12,19 @@ def text_msg(user, msg):
     if msg.lower() == 'basic info':
         user.state = 1
         message = list()
-        message.append(TextSendMessage(text="I major in Electrical Engineering, and I'm also a fast learner in many area\
- especially in software engineering.\nThe following is my projects experience and also tips of iceberg in my college life."))
+        message.append(TextSendMessage(text="I major in Electrical Engineering. I got GPA: 4.17/4.30 in last semester and I am also the TA of Signals and Systems.\nThe following is my CV."))
         FlexMessage = json.load(open('Basicinfo_CV.json','r',encoding='utf-8'))
         message.append(FlexSendMessage('Basicinfo_CV', FlexMessage))
         return message
     elif msg.lower() == 'side project':
         user.state = 2
+        message = list()
+        message.append(TextSendMessage(text='I like to discover the inconvenience in our daily life. These following side projects are designed by myself and built in my own free time.'))
         FlexMessage = json.load(open('Sideproject.json','r',encoding='utf-8'))
-        return FlexSendMessage('Sideproject',FlexMessage)
-
+        message.append(FlexMessage)
+        return message
+    elif msg.lower() == 'course':
+        
     elif msg.lower() == 'contact':
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
