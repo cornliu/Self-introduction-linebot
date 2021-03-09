@@ -9,7 +9,18 @@ def follow_event_message():
     return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
 
 def text_msg(user, msg):
-    if msg == 'Contact':
+    if msg.lower() == 'basic info':
+        user.state = 1
+        message = list()
+        message.append(TextSendMessage(text="I major in Electrical Engineering, and I'm also a fast learner in many area\
+            especially in software engineering. Besides, I have participated in lots of\
+            extracurricular software projects to improve the daily life. The following is\
+            my projects experience and also tips of iceberg in my college life."))
+        FlexMessage = json.load(open('Basicinfo_CV.json','r',encoding='utf-8'))
+        message.append(FlexSendMessage('Basicinfo_CV', FlexMessage))
+        return message
+    else if msg.lower() == 'contact':
+        user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
         return FlexSendMessage('Contact info',FlexMessage)
 # #ImagemapSendMessage(組圖訊息)
