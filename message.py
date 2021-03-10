@@ -27,6 +27,13 @@ def text_msg(user, msg):
         user.state = 3
         FlexMessage = json.load(open('Course.json','r',encoding='utf-8'))
         return FlexSendMessage('Course',FlexMessage)
+    elif msg.lower() == 'skills':
+        user.state = 4
+        image_message = ImageSendMessage(
+            original_content_url='https://imgur.com/tusgSRh',
+            preview_image_url='https://example.com/preview.jpg'
+        )
+        return image_message
     elif msg.lower() == 'contact':
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
