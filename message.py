@@ -38,5 +38,9 @@ def text_msg(user, msg):
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
         return FlexSendMessage('Contact info',FlexMessage)
+    elif msg.lower() == 'Extracurricular activities':
+        user.state = 6
+        FlexMessage = json.load(open('Sideproject.json','r',encoding='utf-8'))
+        return FlexSendMessage('Sideproject',FlexMessage)
     else:
         return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
