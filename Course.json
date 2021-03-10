@@ -261,7 +261,7 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "ML Related Technic",
+                      "text": "ML Technic",
                       "size": "md"
                     },
                     {
@@ -365,7 +365,7 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "Functionally-Reduced-AIG",
+                      "text": "FRAIG",
                       "size": "md"
                     },
                     {
