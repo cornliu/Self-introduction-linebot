@@ -58,13 +58,18 @@ def text_msg(user, msg):
         return FlexSendMessage('Activities',FlexMessage)
     else:
         # return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
-        return TextSendMessage(
-                    text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.',
-                    quick_reply=get_quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
-        )
-        # text_message = TextSendMessage(text='Hello, world',
-        #                        quick_reply=QuickReply(items=[
-        #                            QuickReplyButton(action=MessageAction(label="label", text="text"))
-        #                        ]))
-        # return text_message
+        # return TextSendMessage(
+        #             text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.',
+        #             quick_reply=get_quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
+        # )
+        text_message = TextSendMessage(text='Hello, world',
+                               quick_reply=QuickReply(items=[
+                                   QuickReplyButton(action=MessageAction(label="Basic Info", text="Basic Info")),
+                                   QuickReplyButton(action=MessageAction(label="Side Project", text="Side Project")),
+                                   QuickReplyButton(action=MessageAction(label="Course", text="Course")),
+                                   QuickReplyButton(action=MessageAction(label="Skills", text="Skills")),
+                                   QuickReplyButton(action=MessageAction(label="Contact", text="Contact")),
+                                   QuickReplyButton(action=MessageAction(label="Extracurricular Activities", text="Extracurricular Activities"))
+                               ]))
+        return text_message
 
