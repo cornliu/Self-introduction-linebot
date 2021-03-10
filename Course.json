@@ -19,7 +19,7 @@
               "type": "text",
               "text": "Web Programming",
               "weight": "bold",
-              "size": "sm",
+              "size": "md",
               "wrap": true
             },
             {
@@ -36,7 +36,7 @@
                       "text": "Prof. 黃鐘揚",
                       "wrap": true,
                       "color": "#8c8c8c",
-                      "size": "xs",
+                      "size": "sm",
                       "flex": 5
                     }
                   ]
@@ -54,13 +54,13 @@
                     {
                       "type": "text",
                       "text": "EZ-tidy",
-                      "size": "sm"
+                      "size": "md"
                     },
                     {
                       "type": "text",
                       "text": "Storage system",
                       "color": "#8c8c8c",
-                      "size": "xxs"
+                      "size": "xs"
                     }
                   ]
                 },
@@ -72,8 +72,8 @@
                       "type": "button",
                       "action": {
                         "type": "uri",
-                        "label": "action",
-                        "uri": "http://linecorp.com/"
+                        "label": "github",
+                        "uri": "https://github.com/cornliu/EZ-tidy"
                       },
                       "position": "relative",
                       "height": "sm",
@@ -86,7 +86,7 @@
             },
             {
               "type": "box",
-              "layout": "vertical",
+              "layout": "horizontal",
               "contents": [
                 {
                   "type": "box",
@@ -94,8 +94,32 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "hello, world",
+                      "size": "md",
+                      "text": "Answering system"
+                    },
+                    {
+                      "type": "text",
+                      "text": "game",
+                      "color": "#8c8c8c",
                       "size": "xs"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "github",
+                        "uri": "https://github.com/cornliu/109-1-Web-Hackathon03"
+                      },
+                      "position": "relative",
+                      "height": "sm",
+                      "adjustMode": "shrink-to-fit",
+                      "style": "link"
                     }
                   ]
                 }
@@ -104,6 +128,22 @@
           ],
           "spacing": "sm",
           "paddingAll": "13px"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "more on github",
+                "uri": "https://github.com/cornliu?tab=repositories"
+              },
+              "margin": "none",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
         }
       },
       {
