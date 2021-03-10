@@ -6,16 +6,18 @@ from User import *
 import json
 from linebot.models import QuickReply, QuickReplyButton, MessageAction
 
-def Quick_reply(words: list):
-    tag = list()
-    for word in words:
-        tag.append(QuickReplyButton(
+def get_quick_reply(keywords: list):
+    items = list()
+    for keyword in keywords:
+        items.append(QuickReplyButton(
             action=MessageAction(
-            label=word,
-            text=word
+            label=keyword,
+            text=keyword
             )
         ))
-    return QuickReply(items=tag)
+    return QuickReply(
+        items=items
+    )
 
 def follow_event_message():
     return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
@@ -58,7 +60,7 @@ def text_msg(user, msg):
         # return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
         return TextSendMessage(
                     text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.',
-                    quick_reply=Quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
+                    quick_reply=get_quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
         )
         # text_message = TextSendMessage(text='Hello, world',
         #                        quick_reply=QuickReply(items=[
