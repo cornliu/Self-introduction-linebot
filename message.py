@@ -4,6 +4,7 @@ from linebot.exceptions import (InvalidSignatureError)
 from linebot.models import *
 from User import *
 import json
+from linebot.models import QuickReply, QuickReplyButton, MessageAction
 
 def quick_reply(words: list):
     tag = list()
@@ -54,9 +55,9 @@ def text_msg(user, msg):
         FlexMessage = json.load(open('Activities.json','r',encoding='utf-8'))
         return FlexSendMessage('Activities',FlexMessage)
     else:
-        return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
-        # return TextSendMessage(
-        #             text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.'
-        #             quick_reply=quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
-        # )
+        # return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
+        return TextSendMessage(
+                    text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.'
+                    quick_reply=quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
+        )
 
