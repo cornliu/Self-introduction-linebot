@@ -24,7 +24,9 @@ def text_msg(user, msg):
         message.append(FlexMessage)
         return message
     elif msg.lower() == 'course':
-        
+        user.state = 3
+        FlexMessage = json.load(open('Course.json','r',encoding='utf-8'))
+        return FlexSendMessage('Course',FlexMessage)
     elif msg.lower() == 'contact':
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
