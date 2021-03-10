@@ -65,11 +65,11 @@ def text_msg(user, msg):
         text_message = TextSendMessage(text='Hello, world',
                                quick_reply=QuickReply(items=[
                                    QuickReplyButton(action=MessageAction(label="Basic Info", text="Basic Info")),
-                                   QuickReplyButton(action=MessageAction(label="Side Project", text="Side Project"))
-                                #    QuickReplyButton(action=MessageAction(label="Course", text="Course")),
-                                #    QuickReplyButton(action=MessageAction(label="Skills", text="Skills")),
-                                #    QuickReplyButton(action=MessageAction(label="Contact", text="Contact")),
-                                #    QuickReplyButton(action=MessageAction(label="Extracurricular Activities", text="Extracurricular Activities"))
+                                   QuickReplyButton(action=MessageAction(label="Side Project", text="Side Project")),
+                                   QuickReplyButton(action=MessageAction(label="Course", text="Course")),
+                                   QuickReplyButton(action=MessageAction(label="Skills", text="Skills")),
+                                   QuickReplyButton(action=MessageAction(label="Contact", text="Contact")),
+                                   QuickReplyButton(action=MessageAction(label="Extracurricular Activities", text="Extracurricular Activities"))
                                ]))
         return text_message
 
