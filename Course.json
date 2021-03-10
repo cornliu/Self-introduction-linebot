@@ -58,7 +58,7 @@
                     },
                     {
                       "type": "text",
-                      "text": "Storage system",
+                      "text": "js, html",
                       "color": "#8c8c8c",
                       "size": "xs"
                     }
@@ -74,47 +74,6 @@
                         "type": "uri",
                         "label": "github",
                         "uri": "https://github.com/cornliu/EZ-tidy"
-                      },
-                      "position": "relative",
-                      "height": "sm",
-                      "adjustMode": "shrink-to-fit",
-                      "style": "link"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "box",
-              "layout": "horizontal",
-              "contents": [
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "text",
-                      "size": "md",
-                      "text": "Answering system"
-                    },
-                    {
-                      "type": "text",
-                      "text": "game",
-                      "color": "#8c8c8c",
-                      "size": "xs"
-                    }
-                  ]
-                },
-                {
-                  "type": "box",
-                  "layout": "vertical",
-                  "contents": [
-                    {
-                      "type": "button",
-                      "action": {
-                        "type": "uri",
-                        "label": "github",
-                        "uri": "https://github.com/cornliu/109-1-Web-Hackathon03"
                       },
                       "position": "relative",
                       "height": "sm",
@@ -151,7 +110,7 @@
         "size": "mega",
         "hero": {
           "type": "image",
-          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip11.jpg",
+          "url": "https://imgur.com/ELp6rFB.jpg",
           "size": "full",
           "aspectMode": "cover",
           "aspectRatio": "320:213"
@@ -162,49 +121,10 @@
           "contents": [
             {
               "type": "text",
-              "text": "Brow&Cony's Restaurant",
+              "text": "Data Structure",
               "weight": "bold",
-              "size": "sm",
+              "size": "md",
               "wrap": true
-            },
-            {
-              "type": "box",
-              "layout": "baseline",
-              "contents": [
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-                },
-                {
-                  "type": "text",
-                  "text": "4.0",
-                  "size": "sm",
-                  "color": "#8c8c8c",
-                  "margin": "md",
-                  "flex": 0
-                }
-              ]
             },
             {
               "type": "box",
@@ -217,11 +137,52 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "東京旅行",
+                      "text": "Prof. 顏嗣鈞",
                       "wrap": true,
                       "color": "#8c8c8c",
-                      "size": "xs",
+                      "size": "sm",
                       "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Page Rank",
+                      "size": "md"
+                    },
+                    {
+                      "type": "text",
+                      "text": "python",
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "github",
+                        "uri": "https://github.com/cornliu/Page-Rank"
+                      },
+                      "position": "relative",
+                      "height": "sm",
+                      "adjustMode": "shrink-to-fit",
+                      "style": "link"
                     }
                   ]
                 }
@@ -230,6 +191,22 @@
           ],
           "spacing": "sm",
           "paddingAll": "13px"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "more on github",
+                "uri": "https://github.com/cornliu?tab=repositories"
+              },
+              "margin": "none",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
         }
       },
       {
@@ -237,7 +214,7 @@
         "size": "mega",
         "hero": {
           "type": "image",
-          "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip12.jpg",
+          "url": "https://imgur.com/shUphX5.jpg",
           "size": "full",
           "aspectMode": "cover",
           "aspectRatio": "320:213"
@@ -248,48 +225,10 @@
           "contents": [
             {
               "type": "text",
-              "text": "Tata",
+              "text": "Maching Learning",
               "weight": "bold",
-              "size": "sm"
-            },
-            {
-              "type": "box",
-              "layout": "baseline",
-              "contents": [
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gold_star_28.png"
-                },
-                {
-                  "type": "icon",
-                  "size": "xs",
-                  "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
-                },
-                {
-                  "type": "text",
-                  "text": "4.0",
-                  "size": "sm",
-                  "color": "#8c8c8c",
-                  "margin": "md",
-                  "flex": 0
-                }
-              ]
+              "size": "md",
+              "wrap": true
             },
             {
               "type": "box",
@@ -302,11 +241,52 @@
                   "contents": [
                     {
                       "type": "text",
-                      "text": "東京旅行",
+                      "text": "Prof. 李宏毅",
                       "wrap": true,
                       "color": "#8c8c8c",
-                      "size": "xs",
+                      "size": "sm",
                       "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "ML Related Technic",
+                      "size": "md"
+                    },
+                    {
+                      "type": "text",
+                      "text": "python",
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "github",
+                        "uri": "https://github.com/cornliu?tab=repositories"
+                      },
+                      "position": "relative",
+                      "height": "sm",
+                      "adjustMode": "shrink-to-fit",
+                      "style": "link"
                     }
                   ]
                 }
@@ -315,6 +295,126 @@
           ],
           "spacing": "sm",
           "paddingAll": "13px"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "more on github",
+                "uri": "https://github.com/cornliu?tab=repositories"
+              },
+              "margin": "none",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "type": "image",
+          "url": "https://imgur.com/hKYmWbG.jpg",
+          "size": "full",
+          "aspectMode": "cover",
+          "aspectRatio": "320:213"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "weight": "bold",
+              "size": "md",
+              "wrap": true,
+              "text": "Data Structure and Programming"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Prof. 黃鐘揚",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Functionally-Reduced-AIG",
+                      "size": "md"
+                    },
+                    {
+                      "type": "text",
+                      "text": "C++",
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "github",
+                        "uri": "https://github.com/cornliu/FRAIG-Functionally-Reduced-AIG-"
+                      },
+                      "position": "relative",
+                      "height": "sm",
+                      "adjustMode": "shrink-to-fit",
+                      "style": "link"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "spacing": "sm",
+          "paddingAll": "13px"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "more on github",
+                "uri": "https://github.com/cornliu?tab=repositories"
+              },
+              "margin": "none",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
         }
       }
     ]

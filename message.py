@@ -19,9 +19,9 @@ def text_msg(user, msg):
     elif msg.lower() == 'side project':
         user.state = 2
         message = list()
-        message.append(TextSendMessage(text='I like to discover the inconvenience in our daily life. These following side projects are designed by myself and built in my own free time.'))
+        message.append(TextSendMessage(text='I like to discover the inconvenience in our daily life. These following side projects are designed by myself, using the knowledge which learned in the class and built in my own free time.'))
         FlexMessage = json.load(open('Sideproject.json','r',encoding='utf-8'))
-        message.append(FlexMessage)
+        message.append(FlexSendMessage('Sideproject', FlexMessage))
         return message
     elif msg.lower() == 'course':
         user.state = 3
