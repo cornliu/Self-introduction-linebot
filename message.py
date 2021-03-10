@@ -30,8 +30,8 @@ def text_msg(user, msg):
     elif msg.lower() == 'skills':
         user.state = 4
         image_message = ImageSendMessage(
-            original_content_url='https://imgur.com/AEDynl0.jpg',
-            preview_image_url='https://imgur.com/AEDynl0.jpg'
+            original_content_url='https://imgur.com/8UzKglJ.jpg',
+            preview_image_url='https://imgur.com/8UzKglJ.jpg'
         )
         return image_message
     elif msg.lower() == 'contact':
