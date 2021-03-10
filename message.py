@@ -69,7 +69,7 @@ def text_msg(user, msg):
                                    QuickReplyButton(action=MessageAction(label="Course", text="Course")),
                                    QuickReplyButton(action=MessageAction(label="Skills", text="Skills")),
                                    QuickReplyButton(action=MessageAction(label="Contact", text="Contact")),
-                                   QuickReplyButton(action=MessageAction(label="Extracurricular Activities", text="Extracurricular Activities"))
+                                   QuickReplyButton(action=MessageAction(label="Activities", text="Extracurricular Activities"))
                                ]))
         return text_message
 
