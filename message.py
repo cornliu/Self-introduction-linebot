@@ -31,7 +31,7 @@ def text_msg(user, msg):
         user.state = 4
         image_message = ImageSendMessage(
             original_content_url='https://imgur.com/AEDynl0.jpg',
-            preview_image_url='https://example.com/preview.jpg'
+            preview_image_url='https://imgur.com/AEDynl0.jpg'
         )
         return image_message
     elif msg.lower() == 'contact':
