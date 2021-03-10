@@ -3,7 +3,7 @@
     "contents": [
       {
         "type": "bubble",
-        "size": "micro",
+        "size": "mega",
         "hero": {
           "type": "image",
           "url": "https://imgur.com/yyHjlkH.jpg",
@@ -108,7 +108,7 @@
       },
       {
         "type": "bubble",
-        "size": "micro",
+        "size": "mega",
         "hero": {
           "type": "image",
           "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip11.jpg",
@@ -194,7 +194,7 @@
       },
       {
         "type": "bubble",
-        "size": "micro",
+        "size": "mega",
         "hero": {
           "type": "image",
           "url": "https://scdn.line-apps.com/n/channel_devcenter/img/flexsnapshot/clip/clip12.jpg",
