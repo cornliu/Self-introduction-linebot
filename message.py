@@ -47,7 +47,7 @@ def text_msg(user, msg):
         user.state = 5
         FlexMessage = json.load(open('Contact.json','r',encoding='utf-8'))
         return FlexSendMessage('Contact info',FlexMessage)
-    elif msg.lower() == 'extracurricular activities':
+    elif msg.lower() == 'activities':
         user.state = 6
         FlexMessage = json.load(open('Activities.json','r',encoding='utf-8'))
         return FlexSendMessage('Activities',FlexMessage)
