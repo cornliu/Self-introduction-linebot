@@ -54,7 +54,13 @@
                     {
                       "type": "text",
                       "text": "EZ-tidy",
-                      "size": "xs"
+                      "size": "sm"
+                    },
+                    {
+                      "type": "text",
+                      "text": "Storage system",
+                      "color": "#8c8c8c",
+                      "size": "xxs"
                     }
                   ]
                 },
@@ -72,7 +78,7 @@
                       "position": "relative",
                       "height": "sm",
                       "adjustMode": "shrink-to-fit",
-                      "style": "secondary"
+                      "style": "link"
                     }
                   ]
                 }
