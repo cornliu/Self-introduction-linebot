@@ -416,6 +416,214 @@
             }
           ]
         }
+      },
+      {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "type": "image",
+          "url": "https://imgur.com/YNt33ct.jpg",
+          "size": "full",
+          "aspectMode": "cover",
+          "aspectRatio": "320:213"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "weight": "bold",
+              "size": "md",
+              "wrap": true,
+              "text": "Computer Programming"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Prof. 魏宏宇",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "RustBucket",
+                      "size": "md"
+                    },
+                    {
+                      "type": "text",
+                      "text": "python",
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "github",
+                        "uri": "https://github.com/cornliu/Little-game-impletment-by-python"
+                      },
+                      "position": "relative",
+                      "height": "sm",
+                      "adjustMode": "shrink-to-fit",
+                      "style": "link"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "spacing": "sm",
+          "paddingAll": "13px"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "more on github",
+                "uri": "https://github.com/cornliu?tab=repositories"
+              },
+              "margin": "none",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
+        }
+      },
+      {
+        "type": "bubble",
+        "size": "mega",
+        "hero": {
+          "type": "image",
+          "url": "https://imgur.com/8UzKglJ.jpg",
+          "size": "full",
+          "aspectMode": "cover",
+          "aspectRatio": "320:213"
+        },
+        "body": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "text",
+              "weight": "bold",
+              "size": "md",
+              "wrap": true,
+              "text": "General Physics"
+            },
+            {
+              "type": "box",
+              "layout": "vertical",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "baseline",
+                  "spacing": "sm",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "text": "Prof. 賀培銘",
+                      "wrap": true,
+                      "color": "#8c8c8c",
+                      "size": "sm",
+                      "flex": 5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "box",
+              "layout": "horizontal",
+              "contents": [
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "text",
+                      "size": "md",
+                      "text": "Physics Simulation"
+                    },
+                    {
+                      "type": "text",
+                      "text": "python",
+                      "color": "#8c8c8c",
+                      "size": "xs"
+                    }
+                  ]
+                },
+                {
+                  "type": "box",
+                  "layout": "vertical",
+                  "contents": [
+                    {
+                      "type": "button",
+                      "action": {
+                        "type": "uri",
+                        "label": "github",
+                        "uri": "https://github.com/cornliu/vpython-hw1-to-hw8"
+                      },
+                      "position": "relative",
+                      "height": "sm",
+                      "adjustMode": "shrink-to-fit",
+                      "style": "link"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "spacing": "sm",
+          "paddingAll": "13px"
+        },
+        "footer": {
+          "type": "box",
+          "layout": "vertical",
+          "contents": [
+            {
+              "type": "button",
+              "action": {
+                "type": "uri",
+                "label": "more on github",
+                "uri": "https://github.com/cornliu/vpython-hw9-to-hw13"
+              },
+              "margin": "none",
+              "adjustMode": "shrink-to-fit"
+            }
+          ]
+        }
       }
     ]
   }
