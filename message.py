@@ -6,18 +6,13 @@ from User import *
 import json
 from linebot.models import QuickReply, QuickReplyButton, MessageAction
 
-def get_quick_reply(keywords: list):
-    items = list()
-    for keyword in keywords:
-        items.append(QuickReplyButton(
-            action=MessageAction(
-            label=keyword,
-            text=keyword
-            )
+def quick_reply(words: list):
+    tags = list()
+    for word in words:
+        tags.append(QuickReplyButton(
+            action=MessageAction(label=word,text=word)
         ))
-    return QuickReply(
-        items=items
-    )
+    return QuickReply(items=tags)
 
 def follow_event_message():
     return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
@@ -57,19 +52,8 @@ def text_msg(user, msg):
         FlexMessage = json.load(open('Activities.json','r',encoding='utf-8'))
         return FlexSendMessage('Activities',FlexMessage)
     else:
-        # return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
         return TextSendMessage(
                     text='Hi, If you wanna know me more, please click one topic that you are interested with.',
-                    quick_reply=get_quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Activities'])
+                    quick_reply=quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Activities'])
         )
-        # text_message = TextSendMessage(text='Hello, world',
-        #                        quick_reply=QuickReply(items=[
-        #                            QuickReplyButton(action=MessageAction(label="Basic Info", text="Basic Info")),
-        #                            QuickReplyButton(action=MessageAction(label="Side Project", text="Side Project")),
-        #                            QuickReplyButton(action=MessageAction(label="Course", text="Course")),
-        #                            QuickReplyButton(action=MessageAction(label="Skills", text="Skills")),
-        #                            QuickReplyButton(action=MessageAction(label="Contact", text="Contact")),
-        #                            QuickReplyButton(action=MessageAction(label="Activities", text="Extracurricular Activities"))
-        #                        ]))
-        # return text_message
 
