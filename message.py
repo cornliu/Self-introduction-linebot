@@ -5,6 +5,17 @@ from linebot.models import *
 from User import *
 import json
 
+def quick_reply(words: list):
+    tag = list()
+    for word in words:
+        tag.append(QuickReplyButton(
+            action=MessageAction(
+            label=word,
+            text=word
+            )
+        ))
+    return QuickReply(items=tag)
+
 def follow_event_message():
     return TextSendMessage(text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.')
 
@@ -43,22 +54,8 @@ def text_msg(user, msg):
         FlexMessage = json.load(open('Activities.json','r',encoding='utf-8'))
         return FlexSendMessage('Activities',FlexMessage)
     else:
-        ImageSendMessage(
-            original_content_url = motivation.image_stage(msg.lower()),
-            preview_image_url = motivation.image_stage(msg.lower()),
-            quick_reply=quick_reply.get_quick_reply(['Begin', 'Rookie in Cardbo', 'Engineer in Cardbo', 'Target'])
-        )
         return TextSendMessage(
                     text='Hi! My name is Ric. You can click \"About Me\" and choose the following squares to know me more.'
                     quick_reply=quick_reply(['Basic Info', 'Side Project', 'Course', 'Skills', 'Contact', 'Extracurricular Activities'])
         )
-def quick_reply(words: list):
-    tag = list()
-    for word in words:
-        tag.append(QuickReplyButton(
-            action=MessageAction(
-            label=word,
-            text=word
-            )
-        ))
-    return QuickReply(items=tag)
+
